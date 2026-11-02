@@ -5,3 +5,9 @@ node_modules/
 !.env.example
 playwright-report/
 test-results/
+.venv/
+__pycache__/
+.pytest_cache/
+backend/data/*
+!backend/data/.gitkeep
+.ruff_cache/

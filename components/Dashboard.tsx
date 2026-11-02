@@ -1,4 +1,5 @@
 "use client";
+import AnalysisPanel from "./AnalysisPanel";
 import Modal from "./Modal";
 import dynamic from "next/dynamic";
 import Link from "next/link";
@@ -100,6 +101,7 @@ export default function Dashboard() {
     period === "Last 7 days" ? 0.3 : period === "Last 90 days" ? 2.6 : 1;
   return (
     <>
+      <AnalysisPanel />
       <div className="kpi-grid">
         {[
           {

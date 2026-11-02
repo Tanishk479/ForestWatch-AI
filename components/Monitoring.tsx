@@ -1,4 +1,5 @@
 "use client";
+import AnalysisPanel from "./AnalysisPanel";
 import { useState } from "react";
 import { Download, ArrowUpRight, ScanLine } from "lucide-react";
 import { useMonitor } from "./Shell";
@@ -20,6 +21,7 @@ export default function Monitoring() {
   );
   return (
     <>
+      <AnalysisPanel expanded />
       <div className="section-toolbar">
         <div>
           <h2>Landscape change analysis</h2>
