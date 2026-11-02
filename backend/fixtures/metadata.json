@@ -1,0 +1,13 @@
+{
+  "area_name": "Synthetic 16\u00d716 test plot",
+  "source": "synthetic_fixture",
+  "before_date": "2026-10-04",
+  "after_date": "2026-11-03",
+  "before_scale": 0.0001,
+  "before_offset": 0,
+  "after_scale": 0.0001,
+  "after_offset": 0,
+  "road_distance_m": 250,
+  "historical_disturbance_fraction": 0.2,
+  "context_provenance": "Synthetic test inputs; not road or disturbance observations"
+}

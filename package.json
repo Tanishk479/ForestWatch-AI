@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start --hostname 0.0.0.0",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "verify:routes": "node scripts/verify-routes.mjs",
+    "verify:analysis": "node scripts/verify-analysis.mjs"
   },
   "dependencies": {
     "@react-three/drei": "^10.7.0",

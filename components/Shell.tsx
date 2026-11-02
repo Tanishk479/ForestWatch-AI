@@ -1,5 +1,6 @@
 "use client";
 import Link from "next/link";
+import AnalysisProvider from "./AnalysisProvider";
 import { usePathname } from "next/navigation";
 import { createContext, useContext, useState } from "react";
 import {
@@ -133,8 +134,8 @@ export default function Shell({ children }: { children: React.ReactNode }) {
                 <strong>Workspace notifications</strong>
                 <p>4 sample events are available in the alert timeline.</p>
                 <p>
-                  All monitoring values are illustrative. No hardware is
-                  connected.
+                  Regional cards and devices are illustrative. Raster results
+                  have separate provenance labels. No hardware is connected.
                 </p>
                 <button
                   className="text-button"
@@ -202,11 +203,11 @@ export default function Shell({ children }: { children: React.ReactNode }) {
               <span className="online-dot" /> Sample data environment{" "}
               <span className="banner-divider">/</span>
               <span>
-                Illustrative satellite analysis and simulated devices. No live
-                monitoring.
+                Regional cards and devices use demo data. Raster panels are
+                labeled separately; no live monitoring.
               </span>
             </div>
-            {children}
+            <AnalysisProvider>{children}</AnalysisProvider>
             <footer>
               <span>
                 <Trees size={14} /> ForestWatch AI
