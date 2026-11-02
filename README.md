@@ -49,3 +49,15 @@ The 2D map uses real OpenStreetMap geography through CARTO's free public raster 
 - Layouts adapt to desktop, tablet and mobile with a collapsible navigation drawer.
 - CSV exports run locally. Demo controls never issue physical device commands.
 - Use the existing checkout in cloud tasks; no additional worktree is necessary.
+
+## Verify production routes
+
+With `npm run build` completed and `npm start` running in another terminal:
+
+```sh
+npm run verify:routes
+# Or specify a different server address:
+npm run verify:routes -- http://127.0.0.1:3002
+```
+
+This dependency-free smoke check verifies HTTP 200, route-specific content, sample-data labels, and absence of server-rendered Three.js/Leaflet containers on all four routes. It does not replace browser checks for WebGL rendering, hydration, navigation, or external map tiles.
