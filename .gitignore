@@ -8,6 +8,8 @@ test-results/
 .venv/
 __pycache__/
 .pytest_cache/
-backend/data/*
-!backend/data/.gitkeep
+backend/data/
 .ruff_cache/
+secrets/
+*.pem
+*.key
